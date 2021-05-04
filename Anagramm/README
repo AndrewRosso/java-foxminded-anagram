@@ -1,6 +1,5 @@
 Task 1 - Anagrams (Strings, algorithms)
 
-Базовая постановка задачи:
 Write an application that reverses all the words of input text:
   E.g. "abcd efgh" => "dcba hgfe"
 All non-letter symbols should stay on the same places:
