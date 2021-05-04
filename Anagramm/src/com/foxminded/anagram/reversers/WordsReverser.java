@@ -1,6 +1,6 @@
 package com.foxminded.anagram.reversers;
 
-public class WordsReversers {
+public class WordsReverser {
 	
 	public String reverseAllWords(String input) {
 
@@ -13,7 +13,7 @@ public class WordsReversers {
 		return String.join(" ", outputWords);
 	}
 
-	private static String reverseWord(String incomingWord) {
+	private String reverseWord(String incomingWord) {
 
 		char[] inputSymbol = incomingWord.toCharArray();
 		char[] outSymbol = new char[inputSymbol.length];
