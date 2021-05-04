@@ -18,26 +18,26 @@ public class WordsReversers {
 		char[] inputSymbol = incomingWord.toCharArray();
 		char[] outSymbol = new char[inputSymbol.length];
 
-		int indexStart = 0;
-		int indexEnd = inputSymbol.length - 1;
+		int startIndex = 0;
+		int endIndex = inputSymbol.length - 1;
 
-		while (indexStart <= indexEnd) {
+		while (startIndex <= endIndex) {
 
-			if (!Character.isLetter(inputSymbol[indexStart])) {
-				outSymbol[indexStart] = inputSymbol[indexStart];
-				indexStart++;
+			if (!Character.isLetter(inputSymbol[startIndex])) {
+				outSymbol[startIndex] = inputSymbol[startIndex];
+				startIndex++;
 			}
-			if (!Character.isLetter(inputSymbol[indexEnd])) {
-				outSymbol[indexEnd] = inputSymbol[indexEnd];
-				indexEnd--;
+			if (!Character.isLetter(inputSymbol[endIndex])) {
+				outSymbol[endIndex] = inputSymbol[endIndex];
+				endIndex--;
 			}
-			if (Character.isLetter(inputSymbol[indexStart]) && Character.isLetter(inputSymbol[indexEnd])) {
+			if (Character.isLetter(inputSymbol[startIndex]) && Character.isLetter(inputSymbol[endIndex])) {
 
-				outSymbol[indexEnd] = inputSymbol[indexStart];
-				outSymbol[indexStart] = inputSymbol[indexEnd];
+				outSymbol[endIndex] = inputSymbol[startIndex];
+				outSymbol[startIndex] = inputSymbol[endIndex];
 
-				indexEnd--;
-				indexStart++;
+				endIndex--;
+				startIndex++;
 			}
 		}
 		return String.valueOf(outSymbol);
