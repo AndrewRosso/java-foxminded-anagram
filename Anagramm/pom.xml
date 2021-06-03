@@ -5,6 +5,16 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Anagram program</name>
   <description>Program to reverse string by words with conditions </description>
+  
+  <dependencies>
+      <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-engine</artifactId>
+          <version>5.7.1</version>
+          <scope>test</scope>
+      </dependency>
+  </dependencies>
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>test</testSourceDirectory>
@@ -34,12 +44,4 @@
             
     </plugins>
   </build>
-  <dependencies>
-      <dependency>
-          <groupId>org.junit.jupiter</groupId>
-          <artifactId>junit-jupiter-engine</artifactId>
-          <version>5.7.1</version>
-          <scope>test</scope>
-      </dependency>
-  </dependencies>
 </project>
